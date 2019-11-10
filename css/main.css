@@ -17,34 +17,40 @@ body {
   background-color: #2b3851;
   display: flex;
   position: relative;
+  z-index: 1;
 }
 
 .robot {
   width: 320px;
+  display: flex;
+  position: absolute;
   justify-content: center;
-  display: inline;
 }
 
 .robot-body {
-  position: absolute;
-  display: flex;
   width: 320px;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0;
+  z-index: 2;
 }
 
 .robot-brain {
-  position: absolute;
-  display: flex;
   width: 46px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
-  display: flex;
+  z-index: 100;
+}
+
+.robot-brain:hover {
+  z-index: 101;
+}
+
+.robot-head-right:hover {
+  z-index: 0;
+}
+
+.robot-head-left:hover {
+  z-index: 0;
 }

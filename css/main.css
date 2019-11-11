@@ -16,15 +16,15 @@ body {
 .banner {
   background-color: #2b3851;
   display: flex;
-  position: relative;
-  z-index: 1;
+  justify-content: center;
 }
 
 .robot {
   width: 320px;
   display: flex;
-  position: absolute;
-  justify-content: center;
+  position: relative;
+  flex-basis: content;
+  margin-top: 55px;
 }
 
 .robot-body {

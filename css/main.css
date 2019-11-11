@@ -29,28 +29,40 @@ body {
 
 .robot-body {
   width: 320px;
-  z-index: 2;
 }
 
 .robot-brain {
   width: 46px;
-  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
-  z-index: 100;
+  position: absolute;
 }
 
-.robot-brain:hover {
-  z-index: 101;
+.robot-head-right {
+  left: 80%;
+  transform: translateX(-80%);
+  bottom: 30%;
 }
 
-.robot-head-right:hover {
-  z-index: 0;
+.robot-head-left {
+  left: 20%;
+  transform: translateX(-20%);
+  bottom: 30%;
 }
 
-.robot-head-left:hover {
-  z-index: 0;
+.robot:hover > .robot-head-left {
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+
+.robot:hover > .robot-head-right {
+  left: 44%;
+  transform: translateX(44%);
 }

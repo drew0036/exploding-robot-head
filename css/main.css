@@ -57,12 +57,15 @@ body {
 }
 
 .robot:hover > .robot-head-left {
-  right: 50%;
-  transform: translateX(-50%);
+  right: 54%;
+  transform: translateX(-54%);
 }
-
 
 .robot:hover > .robot-head-right {
   left: 44%;
   transform: translateX(44%);
+}
+
+.robot:hover > .robot-brain {
+  top: -20%;
 }

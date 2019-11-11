@@ -42,28 +42,29 @@ body {
 .robot-head-left {
   width: 125px;
   position: absolute;
+  bottom: 28%;
 }
 
 .robot-head-right {
-  left: 80%;
-  transform: translateX(-80%);
-  bottom: 30%;
+  left: 82%;
+  transform: translateX(-82%);
 }
 
 .robot-head-left {
-  left: 20%;
-  transform: translateX(-20%);
-  bottom: 30%;
+  left: 18%;
+  transform: translateX(-18%);
 }
 
 .robot:hover > .robot-head-left {
-  right: 54%;
-  transform: translateX(-54%);
+  right: 45%;
+  transform: translateX(-45%);
+  bottom: 30%;
 }
 
 .robot:hover > .robot-head-right {
   left: 44%;
   transform: translateX(44%);
+  bottom: 30%;
 }
 
 .robot:hover > .robot-brain {
